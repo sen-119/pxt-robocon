@@ -23,6 +23,7 @@ let speed: number
 //% weight=100 color=#0fbc11 icon=""
 namespace ロボコン {
     //% block
+    //%  speed.min=-100 speed.max=100
     export function 回転サーボ(speed: number, e: MyEnue): void {
         if (MyEnue.前 == MyEnue.前){
         servos.P1.run(-speed)
